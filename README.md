@@ -1,6 +1,7 @@
 # Azure Region Helper Terraform Module from Build5Nines
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Unit Tests](https://github.com/Build5Nines/terraform-azure-region-map/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/Build5Nines/terraform-azure-region-map/actions/workflows/unit-tests.yml) ![azurerm: supported](https://img.shields.io/badge/azurerm-supported-blue)
+![azapi: supported](https://img.shields.io/badge/azapi-supported-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An opinionated region and abbreviation helper for enterprise multi-region Terraform deployments.
 
