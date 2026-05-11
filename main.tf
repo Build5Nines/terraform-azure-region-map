@@ -88,10 +88,10 @@ locals {
   # -------------------------------------------------------------------
   # Policy / allowed-regions evaluation
   # -------------------------------------------------------------------
-  allowed_canonical      = [for r in var.allowed_regions : lower(replace(r, " ", ""))]
-  has_allow_list         = length(var.allowed_regions) > 0
-  is_allowed             = !local.has_allow_list || contains(local.allowed_canonical, local.primary_canonical)
-  is_secondary_allowed   = !local.has_allow_list || contains(local.allowed_canonical, local.secondary_canonical)
+  allowed_canonical    = [for r in var.allowed_regions : lower(replace(r, " ", ""))]
+  has_allow_list       = length(var.allowed_regions) > 0
+  is_allowed           = !local.has_allow_list || contains(local.allowed_canonical, local.primary_canonical)
+  is_secondary_allowed = !local.has_allow_list || contains(local.allowed_canonical, local.secondary_canonical)
 
   # Enriched map of each allowed region with abbreviation & metadata
   allowed_regions_enriched = {
