@@ -780,7 +780,7 @@ run "multiple_abbreviation_overrides" {
   command = plan
 
   variables {
-    primary_region       = "westeurope"
+    primary_region = "westeurope"
     region_abbreviations = {
       "westeurope"  = "we"
       "northeurope" = "ne"
